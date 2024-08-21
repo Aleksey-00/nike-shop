@@ -1,0 +1,36 @@
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.products-list__img > img {
+     border-radius: 10px;
+}
+
+.products-list__name {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.products-list__old-price {
+    text-decoration: line-through;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.products-list__wrapper {
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.products-list__wrapper:hover {
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.75);
+    transition: box-shadow 0.3s ease-in-out;
+}
